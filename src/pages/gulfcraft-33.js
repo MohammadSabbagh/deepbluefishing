@@ -4,9 +4,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "components/Layout"
 import Seo from 'components/Seo';
 
-const img1 = '../assets/media/boats/gulfcraft_32/1.jpg'
-const img2 = '../assets/media/boats/gulfcraft_32/2.jpg'
-const img3 = '../assets/media/boats/gulfcraft_32/3.jpg'
+const img1 = '../assets/media/boats/gulfcraft_33/1.jpg'
+const img2 = '../assets/media/boats/gulfcraft_33/2.jpg'
+const img3 = '../assets/media/boats/gulfcraft_33/3.jpg'
 
 // markup
 const Page = ({location, data}) => {
@@ -18,7 +18,7 @@ const Page = ({location, data}) => {
       />
       <section className="section">
         <div className="container">
-          <h1>GulfCraft 32ft</h1>
+          <h1>GulfCraft 33ft</h1>
           <StaticImage placeholder="blurred"  src={img1} alt="gulfcraft 32 1" width={600} />
           <StaticImage placeholder="blurred"  src={img2} alt="gulfcraft 32 2" width={600} />
           <StaticImage placeholder="blurred"  src={img3} alt="gulfcraft 32 3" width={600} />

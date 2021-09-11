@@ -21,7 +21,7 @@ const Page = ({location, data}) => {
       />
       <section className="section">
         <div className="container">
-          <h1>Oryx 36</h1>
+          <h1>Oryx 36ft</h1>
           <StaticImage placeholder="blurred"  src={img1} alt="Oryx 36 1" width={600} />
           <StaticImage placeholder="blurred"  src={img2} alt="Oryx 36 2" width={600} />
           <StaticImage placeholder="blurred"  src={img3} alt="Oryx 36 3" width={600} />

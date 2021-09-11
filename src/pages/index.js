@@ -79,19 +79,19 @@ const IndexPage = ({location, data}) => {
           <h2>Boats</h2>
           <div className="columns is-multiline">
             <div className="column is-half">
-              <Link to="/gulfcraft-32">
+              <Link to="/silvercraft-36">
                 <h3>Silvercraft 36</h3>
                 <StaticImage placeholder="blurred"  src={Silvercraft} alt="Silvercraft" width={400} />
               </Link>
             </div>
             <div className="column is-half">
-              <Link to="/gulfcraft-32">
+              <Link to="/oryx-36">
                 <h3>Oryx 36</h3>
                 <StaticImage placeholder="blurred"  src={Oryx} alt="Oryx" width={400} />
               </Link>
             </div>
             <div className="column is-half">
-              <Link to="/gulfcraft-32">
+              <Link to="/gulfcraft-33">
                 <h3>Gulfcraft 33</h3>
                 <StaticImage placeholder="blurred"  src={Gulfcraft} alt="Gulfcraft" width={400} />
               </Link>
