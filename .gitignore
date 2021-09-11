@@ -1,0 +1,14 @@
+node_modules/
+.cache/
+public
+.git
+.cache
+.wordpress-cache
+Wordpress
+
+# Local Netlify folder
+.netlify
+
+.env
+
+.env.*

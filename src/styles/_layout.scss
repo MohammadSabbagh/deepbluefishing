@@ -1,0 +1,113 @@
+#app{
+  .container{
+    @include from($widescreen) {
+      max-width: $desktop;
+    }
+    @include from($fullhd) {
+      max-width: $widescreen;
+    }
+  }
+}
+
+body{
+  //font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  //color: $header;
+  //font-weight: 600;
+  //text-transform: capitalize;
+}
+
+h1{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+h2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: $yellow;
+}
+
+h3{
+  font-weight: 900;
+  padding-bottom: .5rem;
+  color: #fff;
+}
+
+section{
+  text-align: center;
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+.main-title{
+  font-size: calc(20px + 9vw);
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #E4EEFD;
+  text-align: center;
+}
+
+.section-title{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .gatsby-image-wrapper{
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.banner{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.certification{
+  background-color: $light;
+
+  .column{
+    text-align: center;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+    @include from($desktop) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+}
+
+.contacts{
+  font-size: 1.25rem;
+  line-height: 1.7;
+  .section-title{
+    color: $dark;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+}

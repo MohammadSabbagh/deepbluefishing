@@ -1,0 +1,11 @@
+
+.gatsby-image-wrapper {
+  margin-bottom: 1.5rem;
+  @include from($desktop) {
+    //margin: 0 0 1.5rem .5rem;
+  }
+}
+
+section{
+  font-size: 1.5rem;
+}

@@ -1,0 +1,57 @@
+.center{
+  text-align: center;
+}
+// overwrite bulma
+.input, .textarea, .select select {
+    background-color: $light;
+}
+
+.is-clipped {
+  height: 100vh;
+}
+
+strong {
+  color:inherit;
+}
+
+.label {
+    color: $body-color;
+    font-weight: normal;
+  }
+
+.modal-background {
+    background-color: rgba(36, 36, 36, 0.94);
+}
+
+.modal-content{
+  //background: $body-background-color;
+  padding: 0 2rem;
+  max-width: 600px;
+}
+
+
+.back-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 1.5rem;
+}
+
+.svg-icon {
+  color: inherit;
+  fill: currentColor;
+}
+
+.narrow{
+  max-width: 600px !important;
+}
+
+.slick-slide img {
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    @include from($desktop) {
+      height: 500px;
+      width: 500px;
+    }
+  }

@@ -1,0 +1,88 @@
+#header {
+  // padding-bottom: 1.5rem;
+  // @include from($desktop) {
+  //   padding-bottom: 3rem;
+  // }
+}
+
+#header .navbar{
+  min-height: 3rem;
+  align-items: center;
+
+  .navbar-brand {
+    justify-content: center;
+    align-items: center;
+
+    @include from($desktop) {margin-left: 0;}
+
+    .navbar-item { padding: 0;}
+    .logo-link { display: flex; }
+    #logo {
+      //height: 6rem;
+      font-size: 1.5rem;
+      width: auto;
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-family: cursive;
+      height: 8rem;
+
+      @include from($desktop){
+        font-size: 2rem;
+        height: 10rem;
+      }
+    }
+
+    .navbar-burger.burger {
+      padding: 0.75rem;
+      color: #fff;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0);
+      }
+    }
+
+  }
+
+  .navbar-menu {
+    box-shadow: none;
+    display: block;
+    height: 0;
+    transition: height .25s ease;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+
+    @include from($desktop) {
+      height: auto;
+      overflow:visible;
+      padding-top: 0rem;
+    }
+
+    &.is-active{
+      height: 233px;
+      @include from($desktop) {height: auto;}
+    }
+
+    .navbar-end {
+      align-items: center;
+      //padding: 1rem 0 0;
+      text-align: center;
+      padding-top: 3rem;
+      @include from($desktop) {padding-top: 0;}
+    }
+
+    .navbar-item {
+      padding: 1rem;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+
+      &.button {
+        margin: 1rem 0 0 0;
+        display: inline-flex;
+        @include from($desktop) {
+          margin: 0 0 0 1rem;
+        }
+      }
+    }
+  }
+}
