@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useState  } from 'react';
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
 
@@ -6,15 +6,6 @@ import Layout from "components/Layout";
 import Seo from 'components/Seo';
 import { StaticImage } from "gatsby-plugin-image"
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-
-
-// import Oryx from '../assets/media/boats/oryx_36/oryx_1.jpg'
-// import Silvercraft from '../assets/media/boats/silvercraft_36/silvercraft_1.jpg'
-// import Gulfcraft from '../assets/media/boats/gulfcraft_33/gulfcraft_1.jpg'
-// import Gulfcraft32 from '../assets/media/boats/gulfcraft_32/gulfcraft_32_1.jpg'
 
 const Oryx = '../assets/media/boats/oryx_36/1.jpg'
 const Silvercraft = '../assets/media/boats/silvercraft_36/1.jpg'
@@ -22,62 +13,56 @@ const Gulfcraft = '../assets/media/boats/gulfcraft_33/1.jpg'
 const Gulfcraft32 = '../assets/media/boats/gulfcraft_32/1.jpg'
 
 
-
-const settings = {
-  accessibility:false,
-  autoplay:true,
-  autoplaySpeed:500,
-  dots: false,
-  fade: true,
-  infinite: true,
-  speed: 200,
-  slidesToShow: 0,
-  slidesToScroll: 0,
-  arrows: false,
-  centerMode: true
-};
-
-// const gallery = {
-//   0:Gallery0,
-//   1:Gallery1,
-//   2:Gallery2,
-//   3:Gallery3,
-//   4:Gallery4,
-//   5:Gallery5,
-//   6:Gallery6,
-//   7:Gallery7,
-//   8:Gallery8,
-//   9:Gallery9,
-//   10:Gallery10
-// }
-
-
 const IndexPage = ({location, data}) => {
-  const page = data.markdownRemark
-  console.log('location.pathname',location.pathname);
+  const [src, setSrc] = useState(0);
+
+  const requestInterval = (fn, delay) => {
+
+  	var start = new Date().getTime();
+  	var handle = {};
+
+  	const loop = () => {
+  		var current = new Date().getTime(),
+  			delta = current - start;
+
+  		if(delta >= delay) {
+  			//update();
+        fn.call();
+  			start = new Date().getTime();
+  		}
+
+  		handle.value = requestAnimationFrame(loop);
+  	};
+
+  	handle.value = requestAnimationFrame(loop);
+  	return handle;
+  }
+
+  useEffect(() => {
+
+    const intervalId = requestInterval(()=>{
+      console.log('src',src);
+      setSrc(i => i==45?0:++i)
+    },500);
+
+    return () => cancelAnimationFrame(intervalId.value)
+  },[]);
 
   return (
     <Layout>
       <Seo
-        title={'Homepage'}
+        title={'DeepBlueFishing - Fishing boats in Dubai'}
         pathname={location.pathname}
       />
       <section className="section">
         <div className="container">
           <h1>Your way for safe and fun Fishing</h1>
-          <Slider {...settings}>
-            {
-              [ ...Array(46).keys() ].map( (v,i) => (
-                <div key={i}>
-                  <img
-                    placeholder="blurred"
-                    src={`/media/fishing_${i}.jpg`}
-                    alt={ 'dubai fishing gallery ' + i }
-                  />
-                </div>
-              ))
-            }
-          </Slider>
+          <img
+            placeholder="blurred"
+            className="gallery"
+            src={`/media/fishing_${src}.jpg`}
+            alt={ 'dubai fishing gallery ' + src }
+          />
         </div>
       </section>
       <section className="section" id="about">
