@@ -20,13 +20,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 600;
-  letter-spacing: 2px;
   color: #fff;
   text-align: center;
   padding-bottom: 3rem;
+  @include from($desktop){
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
 }
 
 h2{

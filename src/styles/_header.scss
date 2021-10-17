@@ -24,11 +24,11 @@
       font-weight: 900;
       letter-spacing: 1px;
       font-family: cursive;
-      height: 8rem;
+      height: 6rem;
 
       @include from($desktop){
         font-size: 2rem;
-        height: 10rem;
+        height: 8rem;
       }
     }
 
