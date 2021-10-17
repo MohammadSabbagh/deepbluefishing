@@ -43,7 +43,7 @@ const IndexPage = ({location, data}) => {
     const intervalId = requestInterval(()=>{
       console.log('src',src);
       setSrc(i => i==45?0:++i)
-    },500);
+    },1000);
 
     return () => cancelAnimationFrame(intervalId.value)
   },[]);
