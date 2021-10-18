@@ -69,7 +69,7 @@ const IndexPage = ({location, data}) => {
         <div className="container narrow">
           <h2>What We Do</h2>
           <p>We do bottom fishing in the deep sea of Dubai and Trolling big game for big fish.</p>
-          <p>When we do Trolling we expect to catch barracuda ,king fish and queen fish, big hamour and tuna fish.</p>
+          <p>When we do Trolling we expect to catch barracuda ,king fish, queen fish, big hamour and tuna fish.</p>
           <p>Fishing trips duration is 4 hrs, starting at 6am Or afternoon at 2 pm.</p>
           <p>Takeoff Location at Marina Walk, Spinneys roundabout</p>
         </div>

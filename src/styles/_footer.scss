@@ -2,6 +2,9 @@
 .footer{
   background-color: $primary;
   color: $dark;
+  font-size: .75rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
 
   .level{
     flex-direction: column-reverse;
