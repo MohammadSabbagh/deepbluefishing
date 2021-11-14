@@ -5,6 +5,76 @@
   }
 }
 
+.logo-link {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: .78;
+  letter-spacing: -0.06ch;
+  text-transform: lowercase;
+  font-style: italic;
+  width: min-content;
+}
+
+#logo {
+  //height: 6rem;
+  font-size: 1.5rem;
+  width: auto;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-family: cursive;
+  height: 6rem;
+
+  @include from($desktop){
+    font-size: 2rem;
+    height: 8rem;
+  }
+}
+
+.burger {
+  margin-left: auto;
+  position: relative;
+  width: 26px;
+  height: 19px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  cursor: pointer;
+
+  @include from($desktop) {
+    display: none;
+  }
+
+  span{
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 3px;
+  }
+}
+
+.navbar-item {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: -.03ch;
+  line-height: 1;
+
+  &.button {
+    margin: 1rem 0 0 0;
+    display: inline-flex;
+    @include from($desktop) {
+      margin: 0 0 0 1rem;
+    }
+  }
+}
+
 #header .navbar{
   min-height: 3rem;
   align-items: center;
@@ -16,23 +86,8 @@
     @include from($desktop) {margin-left: 0;}
 
     .navbar-item { padding: 0;}
-    .logo-link { display: flex; }
-    #logo {
-      //height: 6rem;
-      font-size: 1.5rem;
-      width: auto;
-      font-weight: 900;
-      letter-spacing: 1px;
-      font-family: cursive;
-      height: 6rem;
 
-      @include from($desktop){
-        font-size: 2rem;
-        height: 8rem;
-      }
-    }
-
-    .navbar-burger.burger {
+    .navbar-burger {
       padding: 0.75rem;
       color: #fff;
       &:hover {
@@ -58,7 +113,7 @@
     }
 
     &.is-active{
-      height: 233px;
+      height: auto;
       @include from($desktop) {height: auto;}
     }
 
@@ -69,20 +124,6 @@
       padding-top: 3rem;
       @include from($desktop) {padding-top: 0;}
     }
-
-    .navbar-item {
-      padding: 1rem;
-      text-align: center;
-      font-weight: 700;
-      font-size: 1.25rem;
-
-      &.button {
-        margin: 1rem 0 0 0;
-        display: inline-flex;
-        @include from($desktop) {
-          margin: 0 0 0 1rem;
-        }
-      }
-    }
   }
+
 }

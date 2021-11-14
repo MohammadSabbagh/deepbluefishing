@@ -20,10 +20,12 @@ const Page = ({location, data}) => {
       <section className="section">
         <div className="container">
           <h1>SilverCraft 36ft</h1>
-          <StaticImage placeholder="blurred"  src={img1} alt="gulfcraft 32 1" width={600} />
-          <StaticImage placeholder="blurred"  src={img2} alt="gulfcraft 32 2" width={600} />
-          <StaticImage placeholder="blurred"  src={img3} alt="gulfcraft 32 3" width={600} />
-          <StaticImage placeholder="blurred"  src={img4} alt="gulfcraft 32 4" width={600} />
+          <div className="boat-gallery">
+            <StaticImage placeholder="blurred"  src={img1} alt="gulfcraft 32 1" width={600} />
+            <StaticImage placeholder="blurred"  src={img2} alt="gulfcraft 32 2" width={600} />
+            <StaticImage placeholder="blurred"  src={img3} alt="gulfcraft 32 3" width={600} />
+            <StaticImage placeholder="blurred"  src={img4} alt="gulfcraft 32 4" width={600} />
+          </div>
           <br/>
           <br/>
           <h2>Specifications</h2>

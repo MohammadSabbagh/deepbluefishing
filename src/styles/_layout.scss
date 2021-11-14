@@ -9,6 +9,12 @@
   }
 }
 
+html{
+  background: linear-gradient(135deg, hsl(211deg 100% 48%), hsl(185deg 100% 65%));
+  background: linear-gradient(135deg, hsl(211deg 100% 48%), hsl(191deg 100% 64%));
+  background-attachment: fixed;
+}
+
 body{
   //font-size: 20px;
 }
@@ -16,26 +22,29 @@ body{
 h1, h2, h3, h4, h5, h6 {
   //color: $header;
   //font-weight: 600;
-  //text-transform: capitalize;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-style: italic;
+  //letter-spacing: -.03ch;
+
 }
 
 h1{
   font-size: 2rem;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 900;
   color: #fff;
   text-align: center;
   padding-bottom: 3rem;
   @include from($desktop){
     font-size: 3rem;
-    letter-spacing: 2px;
   }
 }
 
 h2{
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 900;
   padding-bottom: 1rem;
   color: $yellow;
 }
@@ -67,19 +76,13 @@ li {
   text-align: center;
 }
 
-.section-title{
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 4rem;
-  font-weight: 600;
-}
-
 .content {
   max-width: 600px;
   margin: 0 auto;
 
   .gatsby-image-wrapper{
     margin-bottom: 2rem;
+    margin-right: 2rem;
     text-align: center;
   }
 }
@@ -89,32 +92,15 @@ li {
   margin-bottom: 3rem;
 }
 
-.certification{
-  background-color: $light;
-
-  .column{
-    text-align: center;
-  }
-
-  img {
-    width: 90px;
-    height: 90px;
-    @include from($desktop) {
-      width: 120px;
-      height: 120px;
-    }
-  }
-
-}
-
 .contacts{
   font-size: 1.25rem;
   line-height: 1.7;
-  .section-title{
-    color: $dark;
+
+  p {
+    margin-bottom: 0;
   }
 
   a {
-    font-size: 1.5rem;
+    font-weight: bold;
   }
 }

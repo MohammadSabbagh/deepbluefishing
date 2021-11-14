@@ -24,13 +24,15 @@ export default function Header({onOpenQuote}) {
 
             <div className="navbar-brand">
               <Link to="/" className="logo-link">
-                <img src={Logo} alt="DeepBlueFishing" id="logo"  />
+                {/*<img src={Logo} alt="DeepBlueFishing" id="logo"  />*/}
+                Deep Blue Fishing
               </Link>
               <div
-                className={`navbar-burger burger ${open && 'is-active'}`}
+                className={` burger ${open && 'is-active'}`}
                 onClick={()=>setOpen(v => !v)}
               >
-                <Menu/>
+                {/*<Menu/>*/}
+                <span></span><span></span><span></span>
               </div>
             </div>
 

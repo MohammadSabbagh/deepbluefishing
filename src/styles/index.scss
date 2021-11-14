@@ -7,11 +7,11 @@
 
 $blue: #33aaff;
 $orange: #ff8100;
-$yellow: #fff200;
+$yellow: hsl(60deg 100% 60%);
 
 $blueLight: #F2F6FE;
 
-$primary: $orange;
+$primary: $yellow;
 $link: $yellow;
 
 //$dark: $grey-darker;
@@ -29,7 +29,7 @@ $body-color: $blueLight;
 
 $navbar-background-color: transparent;
 $navbar-item-color: $blueLight;
-$navbar-item-hover-color:  #fff;
+$navbar-item-hover-color:  $link;
 $navbar-item-hover-background-color:transparent;
 $navbar-item-active-color: #fff;
 $navbar-item-active-background-color:transparent;

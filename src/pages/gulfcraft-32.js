@@ -4,12 +4,18 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "components/Layout"
 import Seo from 'components/Seo';
 
-const img1 = '../assets/media/boats/gulfcraft_32/1.jpg'
-const img2 = '../assets/media/boats/gulfcraft_32/2.jpg'
-const img3 = '../assets/media/boats/gulfcraft_32/3.jpg'
-const img4 = '../assets/media/boats/gulfcraft_32/4.jpg'
-const img5 = '../assets/media/boats/gulfcraft_32/5.jpg'
-const img6 = '../assets/media/boats/gulfcraft_32/6.jpg'
+const img1 = '../assets/media/boats/gulfcraft_32/7.jpg'
+const img2 = '../assets/media/boats/gulfcraft_32/8.jpg'
+const img3 = '../assets/media/boats/gulfcraft_32/9.jpg'
+const img4 = '../assets/media/boats/gulfcraft_32/10.jpg'
+const img5 = '../assets/media/boats/gulfcraft_32/11.jpg'
+const img6 = '../assets/media/boats/gulfcraft_32/12.jpg'
+const img7 = '../assets/media/boats/gulfcraft_32/13.jpg'
+const img8 = '../assets/media/boats/gulfcraft_32/14.jpg'
+const img9 = '../assets/media/boats/gulfcraft_32/15.jpg'
+const img10 = '../assets/media/boats/gulfcraft_32/16.jpg'
+const img11 = '../assets/media/boats/gulfcraft_32/17.jpg'
+const img12 = '../assets/media/boats/gulfcraft_32/18.jpg'
 
 // markup
 const Page = ({location, data}) => {
@@ -22,12 +28,20 @@ const Page = ({location, data}) => {
       <section className="section">
         <div className="container">
           <h1>GulfCraft 32ft</h1>
-          <StaticImage placeholder="blurred"  src={img1} alt="gulfcraft 32 1" width={600} />
-          <StaticImage placeholder="blurred"  src={img2} alt="gulfcraft 32 2" width={600} />
-          <StaticImage placeholder="blurred"  src={img3} alt="gulfcraft 32 3" width={600} />
-          <StaticImage placeholder="blurred"  src={img4} alt="gulfcraft 32 4" width={600} />
-          <StaticImage placeholder="blurred"  src={img5} alt="gulfcraft 32 5" width={600} />
-          <StaticImage placeholder="blurred"  src={img6} alt="gulfcraft 32 6" width={600} />
+          <div className="boat-gallery">
+            <StaticImage placeholder="blurred"  src={img1} alt="gulfcraft 32 1" width={600} />
+            <StaticImage placeholder="blurred"  src={img2} alt="gulfcraft 32 2" width={600} />
+            <StaticImage placeholder="blurred"  src={img3} alt="gulfcraft 32 3" width={600} />
+            <StaticImage placeholder="blurred"  src={img4} alt="gulfcraft 32 4" width={600} />
+            <StaticImage placeholder="blurred"  src={img5} alt="gulfcraft 32 5" width={600} />
+            <StaticImage placeholder="blurred"  src={img6} alt="gulfcraft 32 6" width={600} />
+            <StaticImage placeholder="blurred"  src={img7} alt="gulfcraft 32 10" width={600} />
+            <StaticImage placeholder="blurred"  src={img8} alt="gulfcraft 32 20" width={600} />
+            <StaticImage placeholder="blurred"  src={img9} alt="gulfcraft 32 30" width={600} />
+            <StaticImage placeholder="blurred"  src={img10} alt="gulfcraft 32 40" width={600} />
+            <StaticImage placeholder="blurred"  src={img11} alt="gulfcraft 32 50" width={600} />
+            <StaticImage placeholder="blurred"  src={img12} alt="gulfcraft 32 60" width={600} />
+          </div>
           <br/>
           <br/>
           <h2>Specifications</h2>

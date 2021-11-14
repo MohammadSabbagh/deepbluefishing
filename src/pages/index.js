@@ -9,8 +9,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Oryx = '../assets/media/boats/oryx_36/1.jpg'
 const Silvercraft = '../assets/media/boats/silvercraft_36/1.jpg'
-const Gulfcraft = '../assets/media/boats/gulfcraft_33/1.jpg'
-const Gulfcraft32 = '../assets/media/boats/gulfcraft_32/1.jpg'
+const Gulfcraft = '../assets/media/boats/gulfcraft_33/2.jpg'
+const Gulfcraft32 = '../assets/media/boats/gulfcraft_32/8.jpg'
 
 
 const IndexPage = ({location, data}) => {
@@ -68,10 +68,8 @@ const IndexPage = ({location, data}) => {
       <section className="section" id="about">
         <div className="container narrow">
           <h2>What We Do</h2>
-          <p>We do bottom fishing in the deep sea of Dubai and Trolling big game for big fish.</p>
-          <p>When we do Trolling we expect to catch barracuda ,king fish, queen fish, big hamour and tuna fish.</p>
-          <p>Fishing trips duration is 4 hrs, starting at 6am Or afternoon at 2 pm.</p>
-          <p>Takeoff Location at Marina Walk, Spinneys roundabout</p>
+          <p>We do bottom fishing in the deep sea of Dubai and Trolling big game for big fish. When we do Trolling we expect to catch barracuda ,king fish, queen fish, big hamour and tuna fish.</p>
+          <p>Fishing trips duration is 4 hrs, starting at 6am Or afternoon at 2 pm. Takeoff Location at Marina Walk, Spinneys roundabout.</p>
         </div>
       </section>
       <section className="section" id="boats">
@@ -84,12 +82,12 @@ const IndexPage = ({location, data}) => {
                 <StaticImage placeholder="blurred"  src={Silvercraft} alt="Silvercraft" width={400} />
               </Link>
             </div>
-            <div className="column is-half">
+            {/*<div className="column is-half">
               <Link to="/oryx-36">
                 <h3>Oryx 36</h3>
                 <StaticImage placeholder="blurred"  src={Oryx} alt="Oryx" width={400} />
               </Link>
-            </div>
+            </div>*/}
             <div className="column is-half">
               <Link to="/gulfcraft-33">
                 <h3>Gulfcraft 33</h3>
