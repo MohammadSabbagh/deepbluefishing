@@ -11,7 +11,7 @@ export default function Contacts() {
           <div className="column has-text-centered">
             <p><a href="https://wa.me/971526234959">WhatsApp</a></p>
             <p><a href="tel:+971526234959">+971 52 623 4959</a></p>
-            <p><a href="mailto:nasserrustom@gmail.com">nasserrustom@gmail.com</a></p>
+            <p><a href="mailto:nasserrustom@gmail.com">hello@deepbluefishing.ae</a></p>
             <br/>
             <p>DeepBlueFishing</p>
             <p>P.O. Box 88661</p>
