@@ -67,6 +67,8 @@ const SEO = ({
       <meta name="twitter:description" content={pageDescription} />
       <meta name="twitter:image" content={pageImage} />
 
+      <meta name="theme-color" content="#1d4f8b">
+
       { noindex &&
         <meta name="robots" content="noindex, follow" />
       }
