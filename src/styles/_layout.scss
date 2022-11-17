@@ -11,16 +11,19 @@
 
 html{
   background: linear-gradient(75deg, hsl(215deg 90% 45%), hsl(191deg 90% 60%));
-  background-attachment: fixed;
+ background-color: blue;
 
-  background: linear-gradient(270deg,hsl(180deg 50% 50%),hsl(213deg 65% 33%));
+
+  background-image: linear-gradient(270deg,hsl(180deg 50% 50%),hsl(213deg 65% 33%));
 background-attachment: fixed;
 background-size: cover;
+background-position: center;
 min-height: 100%;
 }
 
 body{
   //font-size: 20px;
+min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
