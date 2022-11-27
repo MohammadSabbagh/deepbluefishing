@@ -11,6 +11,7 @@ const Oryx = '../assets/media/boats/oryx_36/1.jpg'
 const Silvercraft = '../assets/media/boats/silvercraft_36/1.jpg'
 const Gulfcraft = '../assets/media/boats/gulfcraft_33/2.jpg'
 const Gulfcraft32 = '../assets/media/boats/gulfcraft_32/8.jpg'
+const Silvercraft_33 = '../assets/media/boats/silvercraft_33/1.jpg'
 
 
 const IndexPage = ({location, data}) => {
@@ -41,7 +42,7 @@ const IndexPage = ({location, data}) => {
   useEffect(() => {
 
     const intervalId = requestInterval(()=>{
-      console.log('src',src);
+      //console.log('src',src);
       setSrc(i => i==45?0:++i)
     },1000);
 
@@ -60,7 +61,7 @@ const IndexPage = ({location, data}) => {
           <img
             placeholder="blurred"
             className="gallery"
-            src={`/media/fishing_${src}.jpg`}
+            src={`/media/gallery/fishing_${src}.jpg`}
             alt={ 'dubai fishing gallery ' + src }
           />
         </div>
@@ -89,9 +90,9 @@ const IndexPage = ({location, data}) => {
               </Link>
             </div>*/}
             <div className="column is-half">
-              <Link to="/gulfcraft-33">
+              <Link to="/silvercraft-33">
                 <h3>Gulfcraft 33</h3>
-                <StaticImage placeholder="blurred"  src={Gulfcraft} alt="Gulfcraft" width={400} />
+                <StaticImage placeholder="blurred"  src={Silvercraft_33} alt="Silvercraft_33" width={400} />
               </Link>
             </div>
             <div className="column is-half">
