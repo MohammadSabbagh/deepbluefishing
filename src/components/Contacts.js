@@ -9,8 +9,8 @@ export default function Contacts() {
 
 
           <div className="column has-text-centered">
-            <p><a href="https://wa.me/971528811474">WhatsApp</a></p>
-            <p><a href="tel:+971528811474">+971 52 88 11 474</a></p>
+            <p><a href="https://wa.me/971582491100">WhatsApp</a></p>
+            <p><a href="tel:+971582491100">+971 58 249 1100</a></p>
             <p><a href="mailto:nasserrustom@gmail.com">hello@deepbluefishing.ae</a></p>
             <br/>
             <p>DeepBlueFishing</p>
