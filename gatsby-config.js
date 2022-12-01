@@ -43,12 +43,12 @@ module.exports = {
       __key: "data",
     },
 
-    // {
-    //   resolve: `gatsby-plugin-gtag`,
-    //   options: {
-    //     trackingId: `G-V8J38H9E3Y`,
-    //     head: false,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `GTM-NCVDDSC`,
+        head: false,
+      },
+    },
   ],
 };
