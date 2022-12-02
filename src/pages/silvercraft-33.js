@@ -24,7 +24,7 @@ const Page = ({location, data}) => {
           <div className="boat-gallery">
             <StaticImage placeholder="blurred"  src={img1} alt="silvercraft 32 1" width={600} />
             <StaticImage placeholder="blurred"  src={img2} alt="silvercraft 32 2" width={600} />
-            {/*<StaticImage placeholder="blurred"  src={img3} alt="silvercraft 32 3" width={600} />*/}
+            <StaticImage placeholder="blurred"  src={img3} alt="silvercraft 32 3" width={600} />
             <StaticImage placeholder="blurred"  src={img4} alt="silvercraft 32 3" width={600} />
             <StaticImage placeholder="blurred"  src={img5} alt="silvercraft 32 3" width={600} />
           </div>

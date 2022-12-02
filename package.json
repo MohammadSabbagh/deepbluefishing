@@ -1,8 +1,8 @@
 {
-  "name": "gurus",
+  "name": "DeepBlueFishing",
   "version": "1.0.0",
   "private": true,
-  "description": "Gurus Digital Poral",
+  "description": "DeepBlueFishing",
   "author": "Mohammad Sabbagh",
   "scripts": {
     "develop": "gatsby develop",

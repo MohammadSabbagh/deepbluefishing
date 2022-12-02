@@ -91,7 +91,7 @@ const IndexPage = ({location, data}) => {
             </div>*/}
             <div className="column is-half">
               <Link to="/silvercraft-33">
-                <h3>Gulfcraft 33</h3>
+                <h3>Silvercraft 33</h3>
                 <StaticImage placeholder="blurred"  src={Silvercraft_33} alt="Silvercraft_33" width={400} />
               </Link>
             </div>

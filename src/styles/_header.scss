@@ -31,8 +31,18 @@
   }
 }
 
-.burger {
+.whatsapp-link{
+  font-size: 1.75rem;
   margin-left: auto;
+  margin-right: 2rem;
+  color: #6aff52;
+  @include from($desktop) {
+    display: none;
+  }
+}
+
+.burger {
+  margin-left: 0;
   position: relative;
   width: 26px;
   height: 19px;
@@ -42,6 +52,7 @@
   flex-wrap: nowrap;
   align-content: space-between;
   cursor: pointer;
+  //display: none;
 
   @include from($desktop) {
     display: none;
