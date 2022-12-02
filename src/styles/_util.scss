@@ -56,9 +56,10 @@ strong {
     }
   }
 
-  svg {
-      width: 1em;
-      height: auto;
-      color: currentcolor;
-      fill: currentColor;
-  }
+svg {
+  width: 1em;
+  height: auto;
+  color: currentcolor;
+  fill: currentColor;
+  display: block;
+}
