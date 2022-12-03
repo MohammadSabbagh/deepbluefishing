@@ -52,7 +52,7 @@ const IndexPage = ({location, data}) => {
   return (
     <Layout>
       <Seo
-        title={'DeepBlueFishing - Fishing boats in Dubai'}
+        title={'Fishing in Dubai - fishing boats with Trolling - '}
         pathname={location.pathname}
       />
       <section className="section">
