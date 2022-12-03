@@ -38,7 +38,7 @@ const SEO = ({
   const pagePathname = pathname || '/'
   const pageImage = new URL(image || banner, siteUrl);
   const url = new URL( pagePathname, siteUrl);
-  const pageTitle = `${siteTitle} | ${title || ''} `;
+  const pageTitle = `${title || ''}  | ${siteTitle}`;
   const pageDescription = description || siteDescription;
 
   const isRootPage = pagePathname =='/'
